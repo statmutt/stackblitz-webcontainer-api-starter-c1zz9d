@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SMS Campaign Manager</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold text-primary-600">SMS Campaign Manager</h1>
+            <p class="mt-2 text-gray-600">Manage your SMS campaigns with ease</p>
+        </div>
+
+        <div class="mt-8 bg-white py-8 px-4 shadow-md rounded-lg sm:px-10">
+            <div id="error" class="text-red-600 text-center mb-4"></div>
+            
+            <form id="loginForm" class="space-y-6">
+                <div>
+                    <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                    <input type="text" id="username" class="input mt-1 block w-full" required>
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="password" class="input mt-1 block w-full" required>
+                </div>
+                <button type="submit" class="w-full btn-primary">Login</button>
+            </form>
+            
+            <div class="mt-4 text-center">
+                <a href="#" id="showRegister" class="text-primary-600 hover:text-primary-500">Need an account? Register</a>
+            </div>
+            
+            <form id="registerForm" class="hidden space-y-6">
+                <div>
+                    <label for="regUsername" class="block text-sm font-medium text-gray-700">Username</label>
+                    <input type="text" id="regUsername" class="input mt-1 block w-full" required>
+                </div>
+                <div>
+                    <label for="regPassword" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="regPassword" class="input mt-1 block w-full" required>
+                </div>
+                <button type="submit" class="w-full btn-primary">Register</button>
+                <div class="text-center">
+                    <a href="#" id="showLogin" class="text-primary-600 hover:text-primary-500">Already have an account? Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/js/auth.js"></script>
+</body>
+</html>
